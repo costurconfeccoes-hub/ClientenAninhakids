@@ -1,6 +1,6 @@
-# Costur Confecções - Sistema Alecrim
+# Costur Confecções - Sistema Aninha Kid's
 
-Sistema de gerenciamento para a marca Alecrim da Costur Confecções.
+Sistema de gerenciamento para a marca Aninha Kid's da Costur Confecções.
 
 ## Funcionalidades
 - Acompanhamento de produção
