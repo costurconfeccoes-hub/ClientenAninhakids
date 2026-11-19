@@ -980,19 +980,19 @@
                     <h3>Legenda</h3>
                     <div class="legend">
                         <div class="legend-item">
-                            <div class="legend-color" style="background-color: var(--success-color);"></div>
+                            <div class="legend-color" style="background-color: #2ecc71;"></div>
                             <span>Disponível para agendamento</span>
                         </div>
                         <div class="legend-item">
-                            <div class="legend-color" style="background-color: var(--secondary);"></div>
+                            <div class="legend-color" style="background-color: #3498db;"></div>
                             <span>Período ocupado (todos os clientes)</span>
                         </div>
                         <div class="legend-item">
-                            <div class="legend-color" style="background-color: var(--holiday-color);"></div>
+                            <div class="legend-color" style="background-color: #e74c3c;"></div>
                             <span>Feriado - Indisponível</span>
                         </div>
                         <div class="legend-item">
-                            <div class="legend-color" style="background-color: var(--optional-color);"></div>
+                            <div class="legend-color" style="background-color: #e67e22;"></div>
                             <span>Facultativo - Consulte disponibilidade</span>
                         </div>
                         <div class="legend-item">
@@ -1000,7 +1000,7 @@
                             <span>Dia que já passou</span>
                         </div>
                         <div class="legend-item">
-                            <div class="legend-color" style="border: 2px solid var(--secondary); background-color: #fff9e6;"></div>
+                            <div class="legend-color" style="border: 2px solid #3498db; background-color: #fff9e6;"></div>
                             <span>Dia atual</span>
                         </div>
                     </div>
@@ -1144,7 +1144,7 @@
         function updateBookedDates() {
             bookedDates = {};
             allAppointments.forEach(app => {
-                if (app.status === 'active' || app.status === 'in-production' || app.status === 'Agendado' || app.status === 'Em produção' || app.status === 'Realizado') {
+                if (app.status === 'active' || app.status === 'in-production' || app.status === 'Agendado' || app.status === 'Em produção' || app.status === 'Realizado' || app.status === 'completed') {
                     const start = parseFirebaseDate(app.serviceDate);
                     if (start) {
                         const days = app.estimatedDays || 1;
